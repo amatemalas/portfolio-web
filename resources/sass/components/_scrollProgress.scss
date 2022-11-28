@@ -1,0 +1,12 @@
+.c-scrollProgress {
+    position: fixed;
+    top: 56px;
+    width: 0%;
+    height: 4px;
+    background: var(--bs-info);
+    z-index: 9;
+    transition: all .2s ease;
+    @media screen and (max-width: 900px) {
+        top: 95px;
+    }
+}
