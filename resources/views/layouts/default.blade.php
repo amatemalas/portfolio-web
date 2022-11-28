@@ -11,6 +11,7 @@
 <body class="bg-dark text-light">
     @include('site.header')
     
+    <canvas></canvas>
     <div class="container my-5 pt-5">
         <div class="row">
             <div class="col col-md-4">
