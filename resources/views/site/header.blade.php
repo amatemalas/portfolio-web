@@ -26,10 +26,35 @@
 </nav>
 <div id="scrollProgress" class="c-scrollProgress"></div>
 
+@push('scripts')
 <script>
-    document.querySelector('#searchbar').addEventListener('submit', (e) => {
+    $('#searchbar').submit(function (e) {
         e.preventDefault();
         const data = new FormData(e.target);
-        window.find(data.get('search'));
-    })
+        const term = data.get('search');
+
+        if (term === '!roll') {
+            let $elem = $('body');
+            let angle = 360;
+            $({deg: 0}).animate({deg: angle}, {
+                duration: 2000,
+                step: function(now) {
+                    $elem.css({
+                        transform: 'rotate(' + now + 'deg)'
+                    });
+                },
+                complete: function () {
+                    $elem.css({
+                        transform: ''
+                    });
+                }
+            });
+
+            e.target.reset();
+            return;
+        }
+
+        window.find(term);
+    });
 </script>
+@endpush

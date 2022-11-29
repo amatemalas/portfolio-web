@@ -11589,10 +11589,10 @@ canvas {
   z-index: -1;
 }
 
-.nav-item:hover path {
+.nav-item:hover path, a:hover path {
   color: var(--bs-info);
 }
-.nav-item path {
+.nav-item path, a path {
   transition: all 0.5s ease;
 }
 

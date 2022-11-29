@@ -23,7 +23,8 @@
                 <hr>
                 <div class="d-flex align-items-center flex-wrap">
                     <span class="badge rounded-pill bg-primary me-1 mb-2 fw-normal">Laravel</span>
-                    <span class="badge rounded-pill bg-primary me-1 mb-2 fw-normal">Nuxt</span>
+                    <span class="badge rounded-pill bg-primary me-1 mb-2 fw-normal">NuxtJS</span>
+                    <span class="badge rounded-pill bg-primary me-1 mb-2 fw-normal">ReactJS</span>
                     <span class="badge rounded-pill bg-primary me-1 mb-2 fw-normal">MySQL</span>
                     <span class="badge rounded-pill bg-primary me-1 mb-2 fw-normal">SASS</span>
                     <span class="badge rounded-pill bg-primary me-1 mb-2 fw-normal">Bootstrap 5</span>

@@ -31,7 +31,7 @@ canvas {
     z-index: -1;
 }
 
-.nav-item {
+.nav-item, a {
     &:hover {
         path {
             color: var(--bs-info);
