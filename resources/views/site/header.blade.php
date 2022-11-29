@@ -11,6 +11,9 @@
                     <a href="https://github.com/amatemalas" target="_blank" class="nav-link text-light"><i class="fa-brands fa-github fa-xl"></i></a>
                 </li>
                 <li class="nav-item">
+                    <a href="https://github.com/amatemalas" target="_blank" class="nav-link text-light"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                </li>
+                <li class="nav-item">
                     <a href="https://www.instagram.com/holy_ghost____/" target="_blank" class="nav-link text-light"><i class="fa-brands fa-instagram fa-xl"></i></a>
                 </li>
                 <li class="nav-item">

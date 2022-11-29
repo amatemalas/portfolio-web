@@ -11627,7 +11627,7 @@ canvas {
     width: 0;
   }
   to {
-    width: 65%;
+    width: 70%;
   }
 }
 @keyframes load-sql {
@@ -11652,4 +11652,33 @@ canvas {
   background: transparent;
   border: none;
   display: none;
+}
+
+.c-form {
+  position: relative;
+}
+.c-form__input {
+  background: var(--bs-dark);
+  border: 1px solid var(--bs-primary);
+  border-radius: 7px;
+  width: 100%;
+  transition: all 0.5s ease;
+  outline: none;
+  padding: 5px 15px;
+  font-size: 14px;
+  color: var(--bs-light);
+  resize: none;
+}
+.c-form__input::-moz-placeholder {
+  font-size: 14px;
+  color: var(--bs-gray);
+}
+.c-form__input::placeholder {
+  font-size: 14px;
+  color: var(--bs-gray);
+}
+.c-form__input:focus {
+  border-color: var(--bs-indigo);
+  background: var(--bs-dark);
+  color: var(--bs-light);
 }

@@ -1,5 +1,5 @@
 <div class="bg-secondary rounded p-5 text-center mb-4" data-aos="fade-right" data-aos-delay="500">
-    <img class="rounded-circle border border-4 border-primary" width="200" height="200" src="{{ asset('images/me.jpg') }}" alt="">
+    <img class="rounded-circle border border-4 border-primary pe-none" width="200" height="200" src="{{ asset('images/me.jpg') }}" alt="">
     <h2 class="mt-3">Adrián Matemalas Manzanaro</h2>
     <i class="mt-3 fw-normal">Backend Developer</i>
     <hr>

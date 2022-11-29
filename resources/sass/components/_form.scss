@@ -1,0 +1,24 @@
+.c-form {
+    position: relative;
+    &__input {
+        background: var(--bs-dark);
+        border: 1px solid var(--bs-primary);
+        border-radius: 7px;
+        width: 100%;
+        transition: all .5s ease;
+        outline: none;
+        padding: 5px 15px;
+        font-size: 14px;
+        color: var(--bs-light);
+        resize: none;
+        &::placeholder {
+            font-size: 14px;
+            color: var(--bs-gray);
+        }
+        &:focus {
+            border-color: var(--bs-indigo);
+            background: var(--bs-dark);
+            color: var(--bs-light);
+        }
+    }
+}
