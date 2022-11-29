@@ -1,18 +1,59 @@
-.c-levels {
+.c-level {
     height: 10px;
     border-radius: 7px;
     background: var(--bs-indigo);
     margin-bottom: 25px;
     border: 2px solid var(--bs-dark);
+    animation-delay: 1s;
     &__php {
-        width: 85%;
+        animation: 2s ease load-php forwards;
     }
 
     &__js {
-        width: 65%;
+        animation: 2s ease load-js forwards;
     }
 
     &__sql {
+        animation: 2s ease load-sql forwards;
+    }
+}
+
+@keyframes load-php {
+    from {
+        width: 0;
+    }
+    to {
+        width: 85%;
+    }
+}
+
+@keyframes load-js {
+    from {
+        width: 0;
+    }
+    to {
+        width: 65%;
+    }
+}
+
+@keyframes load-sql {
+    from {
+        width: 0;
+    }
+    to {
         width: 40%;
+    }
+}
+
+.c-levels {
+    p {
+        &:hover {
+            span {
+                display: block;
+            }
+        }
+    }
+    span {
+        display: none;
     }
 }

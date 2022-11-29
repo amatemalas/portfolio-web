@@ -30,3 +30,15 @@ canvas {
     left: 0;
     z-index: -1;
 }
+
+.nav-item {
+    &:hover {
+        path {
+            color: var(--bs-info);
+        }
+    }
+
+    path {
+        transition: all .5s ease;
+    }
+}

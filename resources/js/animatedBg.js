@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const STAR_SIZE = 3;
     const STAR_MIN_SCALE = 0.2;
     const OVERFLOW_THRESHOLD = 50;
-    const STAR_COUNT = ( window.innerWidth + window.innerHeight ) / 8;
+    const STAR_COUNT = ( window.innerWidth + document.querySelector('body').offsetHeight ) / 8;
 
     const canvas = document.querySelector( 'canvas' ),
         context = canvas.getContext( '2d' );
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function resize() {
         scale = window.devicePixelRatio || 1;
         width = window.innerWidth * scale;
-        height = window.innerHeight * scale;
+        height = document.querySelector('body').offsetHeight * scale;
         canvas.width = width;
         canvas.height = height;
         stars.forEach( placeStar );
