@@ -11551,12 +11551,12 @@ button.swiper-pagination-bullet {
 }
 
 ::-moz-selection {
-  background-color: var(--bs-indigo);
+  background-color: var(--bs-info);
   border-radius: 7px;
 }
 
 ::selection {
-  background-color: var(--bs-indigo);
+  background-color: var(--bs-info);
   border-radius: 7px;
 }
 
@@ -11599,7 +11599,7 @@ canvas {
 .c-level {
   height: 10px;
   border-radius: 7px;
-  background: var(--bs-indigo);
+  background: var(--bs-info);
   margin-bottom: 25px;
   border: 2px solid var(--bs-dark);
   animation-delay: 1s;

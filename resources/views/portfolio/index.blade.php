@@ -1,4 +1,4 @@
-<section class="mb-3">
+<section class="my-5">
     <h2>Portfolio</h2>
     <hr>
     <div class="c-portfolio">

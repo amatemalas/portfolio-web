@@ -2,7 +2,10 @@
     <h4>Contacto</h4>
     <hr>
     <div class="mb-3">
-      <input type="email" class="form-control c-form__input" id="name" aria-describedby="name" placeholder="Nombre">
+      <input type="text" class="form-control c-form__input" id="name" aria-describedby="name" placeholder="Nombre">
+    </div>
+    <div class="mb-3">
+      <input type="email" class="form-control c-form__input" id="email" aria-describedby="email" placeholder="Email">
     </div>
     <div class="mb-3">
       <textarea class="form-control c-form__input" id="message" placeholder="Mensaje"></textarea>

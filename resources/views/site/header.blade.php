@@ -11,7 +11,7 @@
                     <a href="https://github.com/amatemalas" target="_blank" class="nav-link text-light"><i class="fa-brands fa-github fa-xl"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://github.com/amatemalas" target="_blank" class="nav-link text-light"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                    <a href="https://www.linkedin.com/in/adri%C3%A1n-matemalas-manzanaro-46a4831a0/" target="_blank" class="nav-link text-light"><i class="fa-brands fa-linkedin fa-xl"></i></a>
                 </li>
                 <li class="nav-item">
                     <a href="https://www.instagram.com/holy_ghost____/" target="_blank" class="nav-link text-light"><i class="fa-brands fa-instagram fa-xl"></i></a>
