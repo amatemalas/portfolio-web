@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,4 +21,8 @@ Route::get('/', function () {
 
 Route::prefix('backend')->group(function () {
     Route::post('/contacts/store', [ContactController::class, 'store'])->name('contacts.store');
+    Route::get('/artisan/migrate', function () {
+        Artisan::call('migrate');
+        dd(Artisan::output());
+    })->name('artisan.migrate');
 });
