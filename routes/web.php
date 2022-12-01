@@ -25,4 +25,8 @@ Route::prefix('backend')->group(function () {
         Artisan::call('migrate');
         dd(Artisan::output());
     })->name('artisan.migrate');
+    Route::get('/artisan/cache', function () {
+        Artisan::call('cache:clear');
+        dd(Artisan::output());
+    })->name('artisan.cache');
 });
