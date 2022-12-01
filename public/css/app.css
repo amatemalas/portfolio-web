@@ -11682,3 +11682,22 @@ canvas {
   background: var(--bs-dark);
   color: var(--bs-light);
 }
+
+.c-availability {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.c-availability__badge {
+  width: 10px;
+  height: 10px;
+}
+.c-availability__badge--dev {
+  background-color: orange;
+}
+.c-availability__badge--up {
+  background-color: greenyellow;
+}
+.c-availability__badge--down {
+  background-color: red;
+}

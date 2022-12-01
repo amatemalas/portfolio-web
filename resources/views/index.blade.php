@@ -8,6 +8,6 @@
 
         @include('portfolio.index')
 
-        @include('references.index')
+        {{-- @include('references.index') --}}
     </div>
 @endsection
