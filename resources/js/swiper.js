@@ -2,7 +2,7 @@
 
  document.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('.swiper', {
-        loop: true,
+        loop: false,
         autoplay: 3000,
         slidesPerView: 1,
         spaceBetween: 20,
@@ -11,7 +11,7 @@
                 slidesPerView: 2,
             },
             1200: {
-                slidesPerView: 3,
+                slidesPerView: 2,
             },
         },
         pagination: {
