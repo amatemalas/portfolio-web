@@ -14,8 +14,12 @@
         <input type="text" class="form-control c-form__input" id="email" aria-describedby="email" placeholder="Email">
       </div>
     </div>
-    <div id="success" class="alert alert-success alert-dismissible d-none"></div>
-    <div id="error" class="alert alert-danger alert-dismissible d-none"></div>
+    <div id="success" class="alert alert-success d-none" role="alert">
+      <span></span>
+    </div>
+    <div id="error" class="alert alert-danger d-none" role="alert">
+      <span></span>
+    </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 
@@ -24,6 +28,9 @@
       $('.c-form').submit(function (e) {
         e.preventDefault();
         const data = new FormData(e.target);
+        data.append('name', $('#name').val());
+        data.append('email', $('#email').val());
+        data.append('phone', $('#phone').val());
         $.ajax({
           method: 'post',
           url: '{{ route("contacts.store") }}',
@@ -38,7 +45,11 @@
           success: function (response) {
             if (response.status === 'ok') {
               $('#success').removeClass('d-none');
-              $('#success').html('<button type="button" class="btn-close" data-bs-dismiss="alert"></button>' + response.message);
+              $('#success span').html(response.message);
+              $('.c-form')[0].reset();
+              setTimeout(() => {
+                $('#success').fadeOut()
+              }, 5000);
               return;
             }
 
@@ -47,7 +58,11 @@
               $('#' + key).addClass('is-invalid');
             }
             $('#error').removeClass('d-none');
-            $('#error').html('<button type="button" class="btn-close" data-bs-dismiss="alert"></button>' + response.message);
+            $('#error span').html(response.message);
+
+            setTimeout(() => {
+              $('#error').fadeOut()
+            }, 5000);
           },
         });
       });

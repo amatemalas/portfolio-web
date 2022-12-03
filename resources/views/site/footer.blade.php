@@ -33,6 +33,9 @@
                     <span class="badge rounded-pill bg-primary me-1 mb-2 fw-normal">Tailwind</span>
                     <span class="badge rounded-pill bg-primary me-1 mb-2 fw-normal">Visual Studio Code</span>
                     <span class="badge rounded-pill bg-primary me-1 mb-2 fw-normal">PHPStorm</span>
+                    <span class="badge rounded-pill bg-primary me-1 mb-2 fw-normal">Plesk</span>
+                    <span class="badge rounded-pill bg-primary me-1 mb-2 fw-normal">CPanel</span>
+                    <span class="badge rounded-pill bg-primary me-1 mb-2 fw-normal">HPanel</span>
                     <span class="badge rounded-pill bg-primary me-1 mb-2 fw-normal">GitLab</span>
                     <span class="badge rounded-pill bg-primary me-1 mb-2 fw-normal">GitHub</span>
                     <span class="badge rounded-pill bg-primary me-1 mb-2 fw-normal">GitFlow</span>
