@@ -13,13 +13,13 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--bs-secondary); 
+    background: var(--bs-info); 
     border-radius: 10px;
     transition: all .5s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--bs-info); 
+    background: var(--bs-light); 
 }
 
 canvas {
