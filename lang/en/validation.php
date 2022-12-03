@@ -155,8 +155,16 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'name' => [
+            'required' => 'El campo de nombre es obligatorio'
+        ],
+        'email'=> [
+            'required' => 'El campo de email es obligatorio',
+            'email' => 'El campo de email debe cumplir un formato válido'
+        ],
+        'phone' => [
+            'numeric' => 'El campo de teléfono debe cumplir un formato válido',
+            'digits' => 'El campo de teléfono debe cumplir un formato válido',
         ],
     ],
 

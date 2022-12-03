@@ -6,6 +6,7 @@ use App\Models\Contact;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Validator;
 
 class ContactController extends Controller
 {
@@ -41,14 +42,32 @@ class ContactController extends Controller
             DB::beginTransaction();
 
             $data = $request->all();
+
+            $validator = Validator::make($data, [
+                'name' => 'required|max:255',
+                'email' => 'required|email',
+                'phone' => 'numeric|digits:10',
+            ]);
+     
+            if ($validator->fails()) {
+                return response()->json([
+                    'message' => 'Hubo un error en el envío del formulario', 
+                    'errors' => $validator->errors(),
+                    'status' => 'ko'
+                ]);
+            }
+
             $contact = Contact::create($data);
 
             DB::commit();
 
-            return response()->json('Formulario enviado correctamente');
+            return response()->json([
+                'message' => 'Formulario enviado correctamente', 
+                'status' => 'ok'
+            ]);
         } catch (Exception $e) {
             DB::rollBack();
-            return response()->json('Ha habido un error en el envío.');
+            return response()->json($e->getMessage());
         }
     }
 
