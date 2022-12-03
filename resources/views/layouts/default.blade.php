@@ -14,10 +14,10 @@
     <canvas></canvas>
     <div class="container my-5 pt-5">
         <div class="row">
-            <div class="col col-md-4">
+            <div class="col-12 col-lg-4">
                 @include('site.sidebar')
             </div>
-            <div class="col col-md-8">
+            <div class="col-12 col-lg-8">
                 @yield('content')
             </div>
         </div>

@@ -2,7 +2,7 @@
     {{-- FORMULARIO DE CONTACTO --}}
     <div class="container text-right">
         <div class="row">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-lg-4">
                 <div class="d-flex flex-column justify-content-between h-100">
                     <div>
                         <p class="display-6 mb-1">
@@ -18,7 +18,7 @@
                     <p class="mb-0">© 2022 All rights reserved</p>
                 </div>
             </div>
-            <div class="col-12 col-md-3 py-md-0 py-4">
+            <div class="col-12 col-lg-3 py-lg-0 py-4">
                 <h4>Competencias</h4>
                 <hr>
                 <div class="d-flex align-items-center flex-wrap">
@@ -40,8 +40,8 @@
                     <span class="badge rounded-pill bg-primary me-1 mb-2 fw-normal">Sony Vegas</span>
                 </div>
             </div>
-            <div class="col-12 col-md-1"></div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-lg-1"></div>
+            <div class="col-12 col-lg-4">
                 @include('contacts.index')
             </div>
         </div>
