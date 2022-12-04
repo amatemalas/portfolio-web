@@ -30,3 +30,7 @@ Route::prefix('backend')->group(function () {
         dd(Artisan::output());
     })->name('artisan.cache');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
