@@ -19,8 +19,17 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::prefix('backend')->group(function () {
-    Route::post('/contacts/store', [ContactController::class, 'store'])->name('contacts.store');
+Route::post('/contacts/front/store', [ContactController::class, 'store'])->name('contacts.front.store');
+
+Auth::routes();
+
+Route::middleware('auth')->prefix('dashboard')->group(function () {
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    
+    Route::resources([
+        'contacts' => ContactController::class,
+    ]);
+
     Route::get('/artisan/migrate', function () {
         Artisan::call('migrate');
         dd(Artisan::output());
@@ -31,6 +40,3 @@ Route::prefix('backend')->group(function () {
     })->name('artisan.cache');
 });
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

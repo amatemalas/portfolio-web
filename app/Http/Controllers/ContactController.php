@@ -17,7 +17,8 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
+        $contacts = Contact::all();
+        return view('backend.contacts.index', compact('contacts'));
     }
 
     /**
@@ -35,7 +36,7 @@ class ContactController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
-     */
+     */     
     public function store(Request $request)
     {
         try {
@@ -79,7 +80,7 @@ class ContactController extends Controller
      */
     public function show(Contact $contact)
     {
-        //
+        return view('backend.contacts.show', compact('contact'));
     }
 
     /**
