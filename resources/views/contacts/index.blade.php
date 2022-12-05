@@ -33,7 +33,7 @@
         data.append('phone', $('#phone').val());
         $.ajax({
           method: 'post',
-          url: '{{ route("contacts.store") }}',
+          url: '{{ route("contacts.front.store") }}',
           headers: {
             'X-CSRF-TOKEN': $('input[name="_token"]').val()
           },
