@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 Route::post('/contacts/front/store', [ContactController::class, 'store'])->name('contacts.front.store');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::middleware('auth')->prefix('dashboard')->group(function () {
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
