@@ -15,7 +15,7 @@
                             <a href="https://twitter.com/adri_matemalas7" target="_blank" class="text-light me-3"><i class="fa-brands fa-twitter fa-xl"></i></a>
                         </div>
                     </div>
-                    <p class="mb-0">© 2022 All rights reserved</p>
+                    <p class="mb-0">© {{ date('Y') }} All rights reserved</p>
                 </div>
             </div>
             <div class="col-12 col-lg-3 py-lg-0 py-4">

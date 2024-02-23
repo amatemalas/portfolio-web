@@ -68,8 +68,8 @@
                                 </div>
                             </li>
                             <li class="nav-item ms-3">
-                                <a class="btn btn-primary rounded-circle" href="{{ url('/') }}" target="_blank">
-                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                <a class="btn btn-primary p-2 rounded-circle" href="{{ url('/') }}" target="_blank">
+                                    <i class="fa-solid fa-right-from-bracket fa-fw"></i>
                                 </a>
                             </li>
                         @endguest

@@ -14,36 +14,20 @@
                         </div>
                     @endif
 
-                    <div class="row">
-                        <div class="col-3">
-                            <a href="#" class="btn btn-primary w-100 py-5">
-                                <div class="d-inline-block">
-                                    <i class="fa-solid fa-lg fa-user"></i> Biografía
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a href="#" class="btn btn-primary w-100 py-5">
-                                <div class="d-inline-block">
-                                    <i class="fa-solid fa-lg fa-paperclip"></i> Portfolio
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a href="#" class="btn btn-primary w-100 py-5">
-                                <div class="d-inline-block">
-                                    <i class="fa-solid fa-lg fa-code"></i> Competencias
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-3">
-                            <a href="{{ route('contacts.index') }}" class="btn btn-primary w-100 py-5">
-                                <div class="d-inline-block">
-                                    <i class="fa-solid fa-lg fa-paper-plane"></i> Contactos
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                      </ul>
                 </div>
             </div>
         </div>

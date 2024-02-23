@@ -1,7 +1,9 @@
 <nav class="navbar navbar-dark navbar-expand bg-secondary fixed-top" data-aos="fade-down">
     <div class="container-fluid">
         <div class="d-flex align-items-center justify-content-between w-100">
-            <a href="/" class="navbar-brand">amatemalas DEV</a>
+            <a href="/" class="navbar-brand">
+                <img src="{{ asset('images/logo-white.png') }}" alt="Logo" class="img-fluid" width="150">
+            </a>
             <form id="searchbar" class="c-searchBar">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="text" name="search" id="search" placeholder='Pulsa "/" para buscar'>
@@ -21,7 +23,7 @@
                 </li>
             </ul>
         </div>
-        
+
     </div>
 </nav>
 <div id="scrollProgress" class="c-scrollProgress"></div>

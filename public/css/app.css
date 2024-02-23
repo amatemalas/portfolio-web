@@ -11504,7 +11504,7 @@ button.swiper-pagination-bullet {
 
 .c-scrollProgress {
   position: fixed;
-  top: 56px;
+  top: 54px;
   width: 0%;
   height: 4px;
   background: var(--bs-info);
@@ -11513,7 +11513,7 @@ button.swiper-pagination-bullet {
 }
 @media screen and (max-width: 900px) {
   .c-scrollProgress {
-    top: 72px;
+    top: 71px;
   }
 }
 
@@ -11631,7 +11631,7 @@ canvas {
     width: 0;
   }
   to {
-    width: 85%;
+    width: 90%;
   }
 }
 @keyframes load-js {
@@ -11639,7 +11639,7 @@ canvas {
     width: 0;
   }
   to {
-    width: 70%;
+    width: 80%;
   }
 }
 @keyframes load-sql {
@@ -11647,7 +11647,7 @@ canvas {
     width: 0;
   }
   to {
-    width: 40%;
+    width: 55%;
   }
 }
 .c-levels p:hover span {
@@ -11699,6 +11699,7 @@ canvas {
   position: absolute;
   top: 10px;
   left: 10px;
+  min-height: 20px;
 }
 .c-availability__badge {
   width: 10px;
@@ -11712,4 +11713,7 @@ canvas {
 }
 .c-availability__badge--down {
   background-color: red;
+}
+.c-availability__badge--waiting {
+  background-color: lightseagreen;
 }
